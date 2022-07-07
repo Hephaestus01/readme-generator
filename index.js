@@ -1,10 +1,10 @@
-// TODO: Include packages needed for this application
+// packages needed for this application
 const inquirer = require('inquirer')
 const fs = require('fs')
 const generateMarkdown = require('./utils/generateMarkdown.js');
 const { rejects } = require('assert');
 
-// TODO: Create an array of questions for user input
+// array of questions for user input
 const questions =
     [
         {
@@ -38,7 +38,7 @@ const questions =
         {
             type: 'input',
             name: 'guidelines',
-            message: 'Please enter confirmation guidelines'
+            message: 'Please enter contribution guidelines'
         },
         {
             type: 'input',
@@ -49,7 +49,7 @@ const questions =
             type: 'checkbox',
             name: 'licenses',
             message: 'Please choose applicable licenses for your project:',
-            choices: ['MIT', 'FOSS', 'Choice 3']
+            choices: ['MIT', 'WTFPL', 'MPL']
         },
         {
             type: 'input',
@@ -64,28 +64,7 @@ const questions =
     ];
 
 
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-
- }
-
-const mockData = {
-    title: 'Project Title',
-    description: 'Project Description Text',
-    install: 'Instructions Text',
-    usageInfo: 'Usage Info Test',
-    guidelines: 'Guidelines Text',
-    instructions: 'Test Instructions',
-    licenses: ['MIT'],
-    username: 'Hephaestus01',
-    email: 'mwhlavaty@gmail.com'
-};
-
-// const pageReadme = generateMarkdown(mockData);
-// console.log(pageReadme)
-
-// TODO: Create a function to initialize app
+// function to initialize app
 function init() {
     inquirer
         .prompt(questions)
@@ -108,5 +87,6 @@ function init() {
             })
         })
 };
+
 // Function call to initialize app
 init();
