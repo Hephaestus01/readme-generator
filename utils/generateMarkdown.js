@@ -17,7 +17,27 @@ function generateMarkdown(data) {
   
   ## Project Description: ${data.description}
 
-  
+  ## Table of Contents
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+
+  ## Installation
+  ${data.install}
+
+  ## Usage
+  ${data.usageInfo}
+
+  ## License
+  ${data.licenses}
+
+  ## Contributing
+  ${data.guidelines}
+
+  ## Tests
+  ${data.instructions}
 
 
 `;
