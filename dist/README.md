@@ -1,7 +1,8 @@
 
-  # Matt's READme.md Generator App
+  # READme.md Generator App
   
-  ## Project Description: This application will assist a user in generating a markdown READme file, by initiating user prompts. The input information will be incorporated into the markdown file's text body. 
+  ## Project Description:
+  This application will assist a user in generating a markdown READme file, by initiating user prompts. The input information will be incorporated into the markdown file's text body. 
 
   ## Table of Contents
   - [Installation](#installation)
@@ -18,13 +19,13 @@
   Once the application is installed, along with node.js, use a terminal to navigate to the directory containing the index.js file and run <node index>. This will initialize the user prompts. Complete each prompt, and then navigate to the 'dist' subdirectory. Your generated READme.md file will be located here, which can then be used as you see fit.
 
   ## License
-  MIT,WTFPL
+  
 
   ## Contributing
-  Please follow the guidelines of [Contributor Covenant](https://www.contributor-covenant.org/).
+  
 
   ## Tests
-  Details for testing instructions coming soon!
+  
 
   ## Questions?
   Reach out:

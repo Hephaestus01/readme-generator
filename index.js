@@ -2,7 +2,7 @@
 const inquirer = require('inquirer')
 const fs = require('fs')
 const generateMarkdown = require('./utils/generateMarkdown.js');
-const { rejects } = require('assert');
+const renderLicenseBadge = require('./utils/generateMarkdown.js');
 
 // array of questions for user input
 const questions =
@@ -49,7 +49,7 @@ const questions =
             type: 'checkbox',
             name: 'licenses',
             message: 'Please choose applicable licenses for your project:',
-            choices: ['MIT', 'WTFPL', 'MPL']
+            choices: ['MIT', 'WTFPL', 'ODC','MPL']
         },
         {
             type: 'input',
@@ -86,6 +86,7 @@ function init() {
                 })
             })
         })
+        .then(renderLicenseBadge)
 };
 
 // Function call to initialize app
