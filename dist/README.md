@@ -19,13 +19,13 @@
   Once the application is installed, along with node.js, use a terminal to navigate to the directory containing the index.js file and run <node index>. This will initialize the user prompts. Complete each prompt, and then navigate to the 'dist' subdirectory. Your generated READme.md file will be located here, which can then be used as you see fit.
 
   ## License
-  
+  MIT,WTFPL
 
   ## Contributing
-  
+  Please follow the guidelines of [Contributor Covenant](https://www.contributor-covenant.org/).
 
   ## Tests
-  
+  Details for testing instructions coming soon!
 
   ## Questions?
   Reach out:
